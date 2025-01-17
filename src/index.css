@@ -43,9 +43,25 @@
 
   body {
     @apply bg-background text-foreground font-inter;
+    background: linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%);
+    min-height: 100vh;
   }
 }
 
 .font-inter {
   font-family: 'Inter', sans-serif;
+}
+
+/* Update the sidebar background to complement the main background */
+.sidebar {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Add a subtle shadow to cards */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
 }
